@@ -1,0 +1,79 @@
+/* heading */
+#heading {
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;    
+}
+
+.initialdiv{
+    background-color: gainsboro;
+    border: 2px solid black;
+    margin: 10px 20px ;
+    padding-left: 10px;
+    /* padding-right: 2px; */
+}
+
+.food {
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    padding: 5px 15px;
+    
+}
+
+#chicken {
+    background-color: burlywood;
+    margin-left: 80%;
+}
+
+#beef {
+    background-color: darkred;
+    color: white;
+    margin-left: 80%;
+}
+
+#sushi{
+    background-color: yellow;
+    margin-left: 80%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+/* MEDIA RESPONSIVENESS for tablet */
+@media screen and (max-width: 967px) {
+    .grid {
+        display: grid;
+        /* grid-template-columns: auto auto; */
+        padding: 10px;
+    }
+    .grid1 {
+        grid-column: 1 / span 1.5;
+        grid-row: 1;
+    }
+     .grid2 {
+        grid-column: 1 span 1.5;
+        grid-row: 1;
+    }
+    .grid3 {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+    #chicken {
+        background-color: burlywood;
+        margin-left: 75%;
+    }
+} 
+/* MEDIA RESPONSIVENESS for phone */
+@media screen and (max-width: 765px) {
+    .grid {
+        display: block;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
+
+} 
+    
