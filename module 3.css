@@ -1,0 +1,89 @@
+/* heading */
+* {
+    font-family: 'Courier New', Courier, monospace;    
+}
+.llc {
+    background-color: rgba(126, 109, 37, 0.692);
+    font-size: 20px;
+    border: 2px solid black ;
+    padding: 10px;
+}
+
+.dropdwn {
+    display: none;
+    /* position: absolute; */
+
+}
+
+h6 {
+    text-align: center;
+    margin: 0;
+    border: 2px solid black ;
+    padding: 5px;
+}
+
+h1{
+    margin: 3px;
+}
+
+h3 {
+    margin: 0;
+}
+
+#heading {
+    color: black;
+    text-align: center;  
+}
+
+.initialdiv{
+    background-color: rgba(126, 109, 37, 0.692);
+    margin: 10px 20px ;
+    padding-left: 10px;
+}
+
+.food {
+    text-align: center;
+    padding: 5px 15px;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+/* MEDIA RESPONSIVENESS for tablet */
+@media screen and (max-width: 967px) {
+    .grid {
+        display: grid;
+        /* grid-template-columns: auto auto; */
+        padding: 10px;
+    }
+    .grid1 {
+        grid-column: 1 / span 1.5;
+        grid-row: 1;
+    }
+     .grid2 {
+        grid-column: 1 span 1.5;
+        grid-row: 1;
+    }
+    .grid3 {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+   
+} 
+/* MEDIA RESPONSIVENESS for phone */
+@media screen and (max-width: 765px) {
+    .grid {
+        display: block;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
+    .dropdwn {
+        display: inline;
+    
+    }
+} 
+    
